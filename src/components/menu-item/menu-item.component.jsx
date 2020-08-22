@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import './menu-item.styles.scss';
 import { withRouter } from 'react-router-dom';
 
-const MenuItem = ({ title, imageUrl, size, linkUrl, history, match }) => (
+const MenuItem = ({
+  title, imageUrl, size, linkUrl, history, match,
+}) => (
   <div
     className={`${size} menu-item`}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
+    role="button"
+    tabIndex="0"
   >
     <div
       className="background-image"
