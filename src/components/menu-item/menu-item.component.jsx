@@ -26,8 +26,8 @@ const MenuItem = ({
 MenuItem.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  urlLink: PropTypes.string.isRequired,
+  size: PropTypes.string,
+  linkUrl: PropTypes.string.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   history: PropTypes.object.isRequired,
 };
