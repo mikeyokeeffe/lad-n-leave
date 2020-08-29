@@ -22,7 +22,7 @@ export default class SignIn extends Component {
   handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
-    this.setState({ [name]: value })
+    this.setState({ [name]: value });
   }
 
   render() {
